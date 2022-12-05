@@ -1,0 +1,16 @@
+---
+ - name: loop variable 
+   hosts: all
+   vars:
+     packages:
+         - httpd
+         - telnet
+         - nano
+         - ftp
+   tasks:
+     - name: install package
+       yum:
+        name: "{{ item }}"
+        state: installed
+       loop: "{{ packages }}"
+
