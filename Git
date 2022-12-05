@@ -1,0 +1,43 @@
+Git:
+
+Git- using git we can execute commands in server command line.
+
+Github - GUI interface
+|- inside used to create repository which should be public always
+ 
+How to create token?
+
+go to settings - developer settings - personal access tokens - token cflassic - generate new token - give permissions - submit.
+
+Personal access tokens - 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
+
+=======================================================================
+
+Installing git packages:
+
+git
+yum install git
+yum list all
+
+package install or not command:
+
+rpm -qa | grep git
+git --version
+need to setup local git repository
+git init
+
+==========================================
+
+after initializing add files a commit changes
+
+git add git.yml
+git commit -m "myfirst"-our understands
+
+status can be checked:
+
+git status
+git branch master
+git remote add origin -https://github.com/nandhugithub/myfirstrepo.git
+git push -u origin (branch name)
+user name: 
+password: personal token
