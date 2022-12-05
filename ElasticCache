@@ -1,0 +1,42 @@
+Amazon ElastiCache is a fully managed, in-memory caching service supporting flexible, real-time use cases.
+ElastiCache is compatible with Redis and Memcached.
+Memcached:
+Memcached is an easy-to-use, high-performance, in-memory data store. 
+create cluster - name - engine version- port 11211- number of nodes-subnet groups-next create
+========================================
+EC2 instance create - launch instance - create
+EC2 instance create then click - connect - console open
+security groups:
+inbound rules
+outbound rules
+=========================
+console:
+sudo su -
+yum install telnet (or) yum install nc
+stats
+telnet (configuration point)
+set 0 0 5
+yugan
+get name
+yugan
+quit
+=============================================================================================
+Rediscached:
+Redis, which stands for Remote Dictionary Server, is a fast, open source, in-memory, key-value data store.
+create cluster - name - engine version- port 6379- number of nodes-subnet groups-next create
+========================================
+EC2 instance create - launch instance - create
+EC2 instance create then click - connect - console open
+security groups:
+inbound rules
+outbound rules
+=========================
+console:
+sudo su -
+yum install telnet (or) yum install nc
+stats
+telnet (configuration point)
+set name nandhini
+get name
+nandhini
+quit
