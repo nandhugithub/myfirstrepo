@@ -14,7 +14,7 @@ console:
 sudo su -
 yum install telnet (or) yum install nc
 stats
-telnet (configuration point)
+telnet (configuration point) (port number)
 set 0 0 5
 yugan
 get name
@@ -35,7 +35,7 @@ console:
 sudo su -
 yum install telnet (or) yum install nc
 stats
-telnet (configuration point)
+telnet (configuration point) (port number)
 set name nandhini
 get name
 nandhini
