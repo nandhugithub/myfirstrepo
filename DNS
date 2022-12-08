@@ -1,0 +1,41 @@
+DNS:
+1. DNS resolver - ISP (internet service provider)
+2. root name server - 13 sets (a to m letters) 12 organisations
+3. TLD server - .com, .in, .net, .edu
+4. authoritative server: ip address and name details nslookup command
+=====================================================================================
+what is route53:
+aws is a DNS service
+manage public DNS record
+====================================
+TTL value (time to live):
+DNS value to remember how many minutes
+========================================
+Routing policies:
+* simple routing: only one record
+* weighted routing: 100 records only added
+it routes the server depends upon weitage
+* latency based routing: quick to connect
+* failover routing:
+  if one node failed, the active backup routing
+  * geo location routing: traffic routing based on user location
+  * multi value routing:
+    multiple value will be set
+    =================================================
+Logs:
+------
+query
+domain name
+location
+ip
+========================================
+Limitations:
+-------------
+maximum of 500 hosted zones.
+10000 resource record sets per hosted zone
+50 domain per aws account
+100 values per record
+6 ip per endpoint
+6 ip per address value
+200 active health check
+50 traffic policies per aws account
