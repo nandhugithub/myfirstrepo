@@ -1,48 +1,48 @@
-yum install docker
-systemctl start docker
-systemctl status docker
+yum install docker </br>
+systemctl start docker </br>
+systemctl status docker </br>
 
 docker hub:
 
 httpd - image
 
-docker pull httpd
-ls -lrt
-docker image ls
-mkdir Dockerfile
-docker run -d --name myhttpd -p 8080:80 httpd
-docker container ls
-docker container exec -it (container id) /bin/bash
+docker pull httpd </br>
+ls -lrt </br>
+docker image ls </br>
+mkdir Dockerfile </br>
+docker run -d --name myhttpd -p 8080:80 httpd </br>
+docker container ls </br>
+docker container exec -it (container id) /bin/bash </br>
 
-Step: 1 Disable selinux
-vi /etc/selinux/config SELINUX=disabled
+Step: 1 Disable selinux </br>
+vi /etc/selinux/config SELINUX=disabled </br>
 
 Step: 2 Restart Linux Server
 
-step 3: Check docker service is running
-systemctl status docker Start the service if not running
-systemctl start docker
-systemctl enable docker
-
-step 5: create Dockerfile directory under /var/lib/docker
-cd /var/lib/docker/Dockerfile
-mkdir httpd
-cd httpd
-touch Mytestfile
-vi test_httpd_copy
-FROM httpd:latest
-COPY Mytestfile .
-save this file using :wq and exit
+step 3: Check docker service is running </br>
+systemctl status docker Start the service if not running </br>
+systemctl start docker </br>
+systemctl enable docker </br>
+ 
+step 5: create Dockerfile directory under /var/lib/docker </br>
+cd /var/lib/docker/Dockerfile </br>
+mkdir httpd </br>
+cd httpd </br>
+touch Mytestfile </br>
+vi test_httpd_copy </br>
+FROM httpd:latest </br>
+COPY Mytestfile . </br>
+save this file using :wq and exit </br>
 
 step 6: build new image
-docker build -t myhttpd:1 .
+docker build -t myhttpd:1 . </br>
 
 step 7: start container
-docker run -d -it -p 8086:80 myhttpd:1
+docker run -d -it -p 8086:80 myhttpd:1 </br>
 
 step 8: validate copied file
-docker exec -it myhttpd /bin/bash
-ls Mytestfile
+docker exec -it myhttpd /bin/bash </br>
+ls Mytestfile </br>
 
 It will list the copied file.
 
